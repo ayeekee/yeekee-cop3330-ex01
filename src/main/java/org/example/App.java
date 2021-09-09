@@ -8,11 +8,13 @@ package org.example;
 import java.util.Scanner;
 
 public class App {
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
         Scanner se = new Scanner(System.in);
-        System.out.println( "What is your name?" );
 
+        System.out.print( "What is your name? " );
         String name = se.nextLine();
-        System.out.println("Hello, " + name + ", nice to meet you!");
+
+        String greeting = "Hello, " + name + ", nice to meet you!";
+        System.out.println(greeting);
     }
 }
